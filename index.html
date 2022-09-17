@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css" />
+    <title>Front-End Dev.</title>
+  </head>
+  <body>
+    <nav>
+      <!--NAVBAR-->
+      <h1>
+        <span id="to-do--txt">TO-DO</span>
+        <span id="list--txt">LIST</span>
+      </h1>
+      <a href="https://github.com/andrealmeida-24" target="_blank">
+        <img id="github-logo" src="GitHub-Mark-Light-120px-plus.png" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/andr%C3%A9-almeida-web-dev/"
+        target="_blank"
+      >
+        <img id="linkedin-logo" src="linkedIn.png" />
+      </a>
+    </nav>
+    <main>
+      <div id="myModal" class="modal"></div>
+      <div id="full-container">
+        <div class="row" id="add-task-row">
+          <input
+            id="input--txt"
+            type="text"
+            placeholder="Input all your tasks for today.."
+          />
+          <button id="add-task--btn">Add</button>
+        </div>
+      </div>
+      <div class="new-full-container">
+        <h3 class="new-full-container--txt1">Current list is full!</h3>
+        <h3 class="new-full-container--txt2">
+          Please complete the tasks or create a new list.
+        </h3>
+        <div class="new-full-btns-container">
+          <button id="close-new--btn">Close</button>
+          <button id="reload-page--btn">NEW LIST</button>
+        </div>
+      </div>
+      <div class="tasks-completed-container">
+        <h3 class="new-full-container--txt1">
+          <span id="congrats--txt">Congrats!</span><br /><br /><span
+            id="modular--txt"
+            >You completed all the tasks</span
+          >
+        </h3>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
